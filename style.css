@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+
+/* CSS Reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.container {
+    max-width: 900px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 1rem;
+}
+
+.flexbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    margin-right: 2.8rem;
+    line-height: 1.7;
+    margin-bottom: 4rem;
+}
+
+.icon {
+    margin-bottom: 1.5rem;
+}
+
+.icon img {
+    height: 33px;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    padding: 15% 0 15% 15%;
+}
+
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+    padding: 15% 0 15% 15%;
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    padding: 15% 0 15% 15%;
+}
+
+a {
+    padding: 10px;
+    border-radius: 100px;
+    border: none;
+    background-color: hsl(0, 0%, 95%);
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    transition: all .3s ease-in-out;
+}
+
+.sedans a {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs a {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury a {
+    color: hsl(179, 100%, 13%);
+}
+
+a:hover {
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    background: transparent;
+}
+
+@media only screen and (max-width:661px) {
+    .flexbox {
+        grid-template-columns: 1fr;
+    }
+
+    .icon img {
+        height: 30px;
+    }
+
+    h1 {
+        margin-bottom: 1.2rem;
+    }
+
+    p {
+        margin-right: 3.2rem;
+        line-height: 1.7;
+        margin-bottom: 2rem;
+    }
+
+    .sedans {
+        padding: 12% 3% 12% 13%;
+    }
+
+    .suvs {
+        padding: 12% 3% 12% 13%;
+    }
+
+    .luxury {
+        padding: 12% 3% 12% 13%;
+    }
+}
